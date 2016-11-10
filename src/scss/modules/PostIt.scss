@@ -1,0 +1,48 @@
+.post-it {
+  margin-bottom: 1em;
+
+  h2 {
+    background: $post-it-title-color;
+    margin: 0 0 1em 0;
+    padding: 0.5em;
+    font-size: 1.5em;
+  }
+
+  p {
+    padding: 0.5em;
+    font-size: 1.3em;
+    overflow: auto;
+  }
+
+  > div, >p {
+    height: 14em;
+  }
+
+  a {
+    margin-left: 0.5em;
+    margin-top: -0.4em;
+  }
+
+  textarea {
+    margin: 0.5em 1em;
+    width: calc(100% - 2em);
+    min-height: 5em;
+  }
+
+  .btn-toolbar {
+    margin-right: 1em;
+    button {
+      float: right;
+    }
+  }
+}
+
+.post-it__container {
+  animation: post-it-appear 1s;
+  background: $post-it-color;
+  box-shadow: 2px 2px 5px $shadow-color;
+}
+
+.post-it-delete {
+  animation: post-it-delete 1s forwards;
+}
